@@ -17,12 +17,12 @@ The model is evaluated on a subset of **MMLU**, using 5 sampling runs per questi
 
 ### DST Belief & Ignorance
 We use:
-- Singleton masses: \( m(\{y_i\}) = \alpha \cdot \bar{p}_i \cdot \rho \)  
-- Ignorance mass: \( m(\Theta) = 1 - \sum_i m(\{y_i\}) \)
+- Singleton masses: m({y_i}) = α * p̄_i * ρ
+- Ignorance mass: m(Θ) = 1 - Σ m({y_i})
 Where:
-- \( \bar{p} \) is the mean softmax across samples  
-- \( \rho \) is sampling consistency  
-- \( \alpha \) is a normalization chosen based on β  
+- p̄_i is the mean softmax across samples  
+- ρ is sampling consistency  
+- α is a normalization chosen based on β  
 
 ### Reliability Diagrams (Smoothed)
 Uses quantile binning + moving average smoothing.
@@ -45,5 +45,3 @@ Runs hand-crafted prompts and displays:
 
 ```bash
 pip install torch datasets transformers scipy matplotlib tqdm numpy pandas
-# DST-Project
-# DST-Project
