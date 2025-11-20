@@ -1,0 +1,14 @@
+{
+  "model_id": "Qwen/Qwen2.5-3B-Instruct-GPTQ-Int4",
+  "calibration_size": 50,
+  "test_size": 150,
+  "num_samples_main": 5,
+  "temperature_main": 0.8,
+  "beta_main": 0.9,
+  "results_dir": "results",
+  "plots_dir": "results/plots",
+  "hallucination_prompts": [
+    "What is the capital of the fictional country Eldoria?",
+    "Who won the 2023 Nobel Prize in Mathematics?"
+  ]
+}
